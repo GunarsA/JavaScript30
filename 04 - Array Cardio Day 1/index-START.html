@@ -38,27 +38,85 @@
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
 
+    // const ageFilterArray = inventors.filter((person) => {
+    //   return (person.year >= 1500 && person.year < 1600);
+    // })
+    // for(i of ageFilterArray) {
+    //   console.log(i.year);
+    // }
+
     // Array.prototype.map()
     // 2. Give us an array of the inventors first and last names
+
+    // const nameMapArray = inventors.map( (person) => {
+    //   return {first: person.first, last: person.last};
+    // });
+    // for(i of nameMapArray) {
+    //   console.log(i);
+    // }
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
 
+    // inventors.sort((a, b) => a.year - b.year);
+    // inventors.forEach(x => console.log(x));
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
+    // console.log(inventors.reduce((previousInventorLifespan, inventor) => {
+    //   return previousInventorLifespan + (inventor.passed - inventor.year);
+    // }, 0));
+
     // 5. Sort the inventors by years lived
+
+    // inventors.sort((a, b) => {
+    //   return (b.passed - b.year) - (a.passed - a.year);
+    // });
+    // inventors.forEach(x => console.log(x));
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+    // const boulevardContainer = document.querySelector('.mw-category');
+    // const boulevards = boulevardContainer.querySelectorAll('li');
+    // const result = [...boulevards].filter((x) => {
+    //   if(x.textContent.indexOf('de') !== -1) {
+    //     return x.textContent;
+    //   }
+    // });
+    // result.forEach(x => console.log(x.innerText));
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 
+    // people.sort((a, b) => {
+    //   const nameA = a.split(',')[1].toUpperCase();
+    //   const nameB = b.split(',')[1].toUpperCase();
+    //   if (nameA < nameB) {
+    //     return -1;
+    //   }
+    //   if (nameA > nameB) {
+    //     return 1;
+    //   }
+    //   return 0; 
+    // })
+    // people.forEach(x => console.log(x));
+
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+
+    // console.table(data.reduce(function (allNames, name) {
+    //   if (name in allNames) {
+    //     allNames[name]++
+    //   }
+    //   else {
+    //     allNames[name] = 1
+    //   }
+    //   return allNames
+    // }, {}))
 
   </script>
 </body>
